@@ -1,9 +1,9 @@
 public class Pila {
 
     // El tope apunta a la pizza que esta arriba de la pila
-    private pizza tope;
+    private Pizza tope;
 
-    public pila () {
+    public Pila() {
         tope = null;
     }
 
@@ -22,7 +22,7 @@ public class Pila {
     // =========================================================
 
     // La nueva pizza apunta a la que estaba en el tope
-    public void push(pizza pizza) {
+    public void push(Pizza pizza) {
         pizza.siguiente = tope;
         // La nueva pizza pasa a ser el nuevo tope
         tope = pizza;
@@ -32,7 +32,7 @@ public class Pila {
     // POP: sacar la pizza que esta en el TOPE
     // =========================================================
 
-    public pizza pop() {
+    public Pizza pop() {
 
          // Si la pila esta vacia, no hay ninguna pizza para retirar
         if (isEmpty()) {
