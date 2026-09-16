@@ -136,31 +136,31 @@ De esta manera se conserva el pedido completo, incluyendo su nombre y sus tres i
 
 Se selecciona la opción **Registrar Pizza**, se ingresa el nombre de la pizza y sus tres ingredientes.
 
-![Registrar Pizza](capturas/Captura_1.png)
+![Registrar Pizza](Capturas/Captura_1.png)
 
 ### 2. Deshacer (Undo)
 
 Se selecciona la opción **Deshacer (Undo)** para retirar el último pedido registrado de la pila principal.
 
-![Deshacer (Undo)](capturas/Captura_2.png)
+![Deshacer (Undo)](Capturas/Captura_2.png)
 
 ### 3. Rehacer (Redo)
 
 Se selecciona la opción **Rehacer (Redo)** para recuperar el pedido que fue deshecho.
 
-![Rehacer (Redo)](capturas/Captura_3.png)
+![Rehacer (Redo)](Capturas/Captura_3.png)
 
 ### 4. Mostrar Pedido Actual
 
  Se selecciona la opción **Mostrar Pedido Actual** para visualizar la pizza que se encuentra en el tope de la pila, incluyendo sus ingredientes.
 
-![Mostrar Pedido Actual](capturas/Captura_4.png)
+![Mostrar Pedido Actual](Capturas/Captura_4.png)
 
 ### 5. Salir
 
 Se selecciona la opción **Salir** para finalizar la ejecución del programa.
 
-![Salir](capturas/Captura_5.png)
+![Salir](Capturas/Captura_5.png)
 
 ## Video de sustentación
 
