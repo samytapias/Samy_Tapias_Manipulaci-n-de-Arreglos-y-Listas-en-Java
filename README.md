@@ -56,6 +56,7 @@ Samy_Tapias_Manipulación de Arreglos y Listas en Java/
 ## Descripción de los archivos
 
 - **Pizza.java:** representa una pizza y almacena su nombre y sus 3 ingredientes. También contiene el enlace hacia la siguiente pizza.
+- **Nodo.java:** representa cada elemento de la lista enlazada utilizada para construir la pila. Cada nodo almacena una pizza y una referencia al siguiente nodo.
 - **Pila.java:** implementa una pila manual mediante una lista enlazada y contiene las operaciones push(), pop(), peek() e isEmpty().
 - **GestionPedidos.java:** administra las dos pilas manuales: una para los pedidos registrados y otra para los pedidos deshechos.
 - **Principal.java:** contiene el menú principal y permite al usuario interactuar con el programa.

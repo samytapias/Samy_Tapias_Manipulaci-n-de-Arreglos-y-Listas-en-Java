@@ -1,12 +1,10 @@
 public class Pizza {
 
+    // Guarda el nombre de la pizza
     private String nombre;
 
      // Arreglo fijo de 3 ingredientes
     private String[] ingredientes = new String[3];
-
-    // Puntero que enlaza esta pizza con la siguiente
-    Pizza siguiente;
 
      // Constructor
      public Pizza(String nombre, String[] ingredientes) {
@@ -15,8 +13,6 @@ public class Pizza {
         for (int i = 0; i < 3; i++) {
             this.ingredientes[i] = ingredientes[i];
         }
-
-        this.siguiente = null;
     }
 
     // Obtener el nombre

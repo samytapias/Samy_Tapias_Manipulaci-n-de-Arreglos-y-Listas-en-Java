@@ -1,7 +1,7 @@
 public class Pila {
 
     // El tope apunta a la pizza que esta arriba de la pila
-    private Pizza tope;
+    private Nodo tope;
 
     public Pila() {
         tope = null;
@@ -23,9 +23,15 @@ public class Pila {
 
     // La nueva pizza apunta a la que estaba en el tope
     public void push(Pizza pizza) {
-        pizza.siguiente = tope;
-        // La nueva pizza pasa a ser el nuevo tope
-        tope = pizza;
+
+        // Creamos un nuevo nodo que contiene la pizza
+        Nodo nuevo = new Nodo(pizza);
+
+        // El nuevo nodo apunta al nodo que estaba en el tope
+        nuevo.siguienteNodo = tope;
+
+        // El nuevo nodo pasa a ser el nuevo tope
+        tope = nuevo;
     }
     
     // =========================================================
@@ -40,16 +46,16 @@ public class Pila {
     }
 
     // Guardamos la pizza que esta en el tope
-        Pizza aux = tope;
+       Nodo aux = tope;
 
         // El tope pasa a ser la siguiente pizza
-        tope = tope.siguiente;
+        tope = tope.siguienteNodo;
 
         // La pizza retirada queda separada de la lista
-        aux.siguiente = null;
+        aux.siguienteNodo = null;
 
         // Devolvemos la pizza que retiramos
-        return aux;
+        return aux.pizza;
     }
 
     // =================================================
@@ -63,6 +69,6 @@ public class Pila {
     }
 
     // Devolvemos la pizza que esta en el tope
-    return tope;
+    return tope.pizza;
     }
 }   
