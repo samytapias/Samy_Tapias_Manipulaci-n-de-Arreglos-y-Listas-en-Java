@@ -10,7 +10,7 @@
 
 ## Descripción
 
-izza-Track es un programa desarrollado en **Java** que simula la gestión de pedidos de una pizzería utilizando **pilas manuales**.
+Pizza-Track es un programa desarrollado en **Java** que simula la gestión de pedidos de una pizzería utilizando **pilas manuales**.
 
 El programa permite registrar pizzas, deshacer el último pedido realizado y rehacer un pedido que había sido deshecho. Para esto se utilizan dos pilas manuales implementadas mediante una estructura de lista enlazada.
 
@@ -36,16 +36,23 @@ El proyecto está organizado de la siguiente manera:
 
 ```text
 Samy_Tapias_Manipulación de Arreglos y Listas en Java/
-├──Pizza-Track
-│
-├── src
+├── src/
 │   ├── Pizza.java
+│   ├── Nodo.java
 │   ├── Pila.java
 │   ├── GestionPedidos.java
 │   └── Principal.java
 │
+├── Capturas/
+│   ├── Captura_1.png
+│   ├── Captura_2.png
+│   ├── Captura_3.png
+│   ├── Captura_4.png
+│   └── Captura_5.png
+│
 └── README.md
 ```
+
 ## Descripción de los archivos
 
 - **Pizza.java:** representa una pizza y almacena su nombre y sus 3 ingredientes. También contiene el enlace hacia la siguiente pizza.
@@ -125,6 +132,35 @@ De esta manera se conserva el pedido completo, incluyendo su nombre y sus tres i
 
 ## Capturas de pantalla
 
+### 1. Registrar Pizza
+
+Se selecciona la opción **Registrar Pizza**, se ingresa el nombre de la pizza y sus tres ingredientes.
+
+![Registrar Pizza](capturas/Captura_1.png)
+
+### 2. Deshacer (Undo)
+
+Se selecciona la opción **Deshacer (Undo)** para retirar el último pedido registrado de la pila principal.
+
+![Deshacer (Undo)](capturas/Captura_2.png)
+
+### 3. Rehacer (Redo)
+
+Se selecciona la opción **Rehacer (Redo)** para recuperar el pedido que fue deshecho.
+
+![Rehacer (Redo)](capturas/Captura_3.png)
+
+### 4. Mostrar Pedido Actual
+
+ Se selecciona la opción **Mostrar Pedido Actual** para visualizar la pizza que se encuentra en el tope de la pila, incluyendo sus ingredientes.
+
+![Mostrar Pedido Actual](capturas/Captura_4.png)
+
+### 5. Salir
+
+Se selecciona la opción **Salir** para finalizar la ejecución del programa.
+
+![Salir](capturas/Captura_5.png)
 
 ## Video de sustentación
 
