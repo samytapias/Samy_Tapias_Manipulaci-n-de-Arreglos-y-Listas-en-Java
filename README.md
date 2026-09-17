@@ -95,23 +95,31 @@ Consulta la pizza que está en el tope mediante `peek()`, sin eliminarla.
 
 Finaliza la ejecución del programa.
 
+## ¿Qué es una pila?
+
+Una pila es una estructura de datos que funciona siguiendo el principio LIFO (Last In, First Out), que significa “el último en entrar es el primero en salir”.
+
+En una pila, los elementos se agregan y se retiran únicamente desde el tope.
+
+Para este proyecto, la pila se implementa manualmente utilizando una lista enlazada, donde cada nodo almacena una pizza y una referencia al siguiente nodo.
+
 ## Operaciones de la pila manual
 
 El proyecto utiliza una pila manual, implementada mediante una lista enlazada. Las principales operaciones utilizadas son:
 
-push() — Agregar
+`push()` — Agregar
 
 Coloca una nueva pizza en el tope de la pila.
 
-pop() — Retirar
+`pop()` — Retirar
 
 Saca la pizza que se encuentra en el tope de la pila.
 
-peek() — Consultar
+`peek()` — Consultar
 
 Permite consultar la pizza que está en el tope de la pila sin eliminarla.
 
-isEmpty() — Comprobar
+`isEmpty()` — Comprobar
 
 Verifica si la pila se encuentra vacía.
 
@@ -130,6 +138,16 @@ Rehacer
 Cuando se selecciona la opción Rehacer, se utiliz`pop()`para retirar la pizza de la pila de rehacer y luego`push()`para devolverla a la pila principal.
 
 De esta manera se conserva el pedido completo, incluyendo su nombre y sus tres ingredientes.
+
+## Aplicación de la pila en Undo y Redo
+
+El funcionamiento de la pila es fundamental para realizar las opciones Deshacer (Undo) y Rehacer (Redo).
+
+Cuando se registran varios pedidos, el último pedido agregado queda en el tope de la pila. Por esta razón, al realizar Undo, se retira primero el pedido más reciente mediante `pop()`.
+
+Ese pedido pasa a la pila de rehacer. Si posteriormente se selecciona Redo, se retira el último pedido de esta segunda pila mediante `pop()` y se vuelve a colocar en la pila principal utilizando `push()`.
+
+De esta manera, los pedidos se pueden deshacer y recuperar manteniendo el orden en que fueron agregados y retirados.
 
 ## Capturas de pantalla
 
@@ -168,3 +186,5 @@ Se selecciona la opción **Salir** para finalizar la ejecución del programa.
 En el video se explica el funcionamiento del proyecto, incluyendo las operaciones principales de la pila manual como push(), pop(), peek() e isEmpty().
 
 También se demuestra el funcionamiento del programa mediante el proceso de Registrar → Deshacer → Rehacer.
+
+[Ver video en Google Drive](https://drive.google.com/file/d/1nRKYM2q016eJAXRjzwPpKhtQsWAEp-qq/view?usp=sharing)
